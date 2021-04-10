@@ -36,6 +36,7 @@ var levelTwo = [
   }
 ]
 
+
 function play(question, answer)
 {
   var userAnswer = readlineSync.question(question);
@@ -64,17 +65,26 @@ console.log("Yay!, you scored: ", score);
 if(score==3){
   console.log("Wow, you know me well!");
   console.log("Here is another level for you!");
+
   for(i = 0; i<levelTwo.length; i++){
     play(levelTwo[i].question, levelTwo[i].answer);
   }
   console.log("Your final score is: ", score);
-  console.log("Thank you for playing this game!");
+  console.log("Answers are: ");
+  for(i=0; i<levelOne.length; i++){
+    console.log(levelOne[i].answer.toUpperCase());
+  }   
+  for(i=0; i<levelTwo.length; i++){
+    console.log(levelTwo[i].answer.toUpperCase());
+  }
+  console.log("I guess you know me a little better now!");
 }
 else{
   console.log(chalk.yellow("Not bad!"));
+  console.log("Answers are: ");
+  for(i=0; i<levelOne.length; i++){
+    console.log(levelOne[i].answer.toUpperCase());
+  }
 }
-
-
-
 
 
