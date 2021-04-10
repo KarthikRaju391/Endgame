@@ -23,8 +23,8 @@ var levelOne = [
 
 var levelTwo = [
   {
-    question: "How tall I am? ",
-    answer: "6"
+    question: "Which month was I born in? ",
+    answer: "September"
   },
   {
     question: "Do I like sweets? ",
@@ -73,3 +73,8 @@ if(score==3){
 else{
   console.log(chalk.yellow("Not bad!"));
 }
+
+
+
+
+
