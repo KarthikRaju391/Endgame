@@ -2,6 +2,7 @@ var readlineSync = require('readline-sync');
 const chalk = require('chalk');
 
 var score = 0;
+console.clear();
 
 var userName = readlineSync.question(chalk.bgCyan("What is your name? "));
 console.log(chalk.bgCyan("Welcome "+ userName + " to DO YOU KNOW KARTHIK? "));
@@ -80,7 +81,7 @@ if(score==3){
   for(i=0; i<levelTwo.length; i++){
     console.log(levelTwo[i].answer.toUpperCase());
   }
-  console.log(chalk.bgCyan("I guess you know me a little better now!"));
+  console.log(chalk.bgCyan("I guess you know me a little better now, thank you for playing!"));
 }
 else{
   console.log(chalk.yellow("Not bad!"));
