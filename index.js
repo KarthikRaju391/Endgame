@@ -90,7 +90,7 @@ else{
 }
 
 function wrong(){
-            while(levelOne[i]){
+    while(levelOne[i]){
       if(i===0){
         console.log(chalk.green("The correct answer is " + levelOne[i].answer));
         break;
